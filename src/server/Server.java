@@ -163,7 +163,7 @@ public class Server {
     }
 
     /**
-     * Método principal para iniciar el servidor.
+     * Función principal para iniciar el servidor.
      *
      * @param args Argumentos de línea de comandos.
      */

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Working directory: cliente-servidor-java/src
+
 # Definir directorios de trabajo
 SOURCE_DIR="services/java"
 JAR_DIR="services/jar"

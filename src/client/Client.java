@@ -72,8 +72,8 @@ public class Client {
                         out.println("RELOAD_SERVICES");  // Enviar solicitud de activar servicio
                         out.flush();
                         // Leer la respuesta del servidor
-                        serverResponse = in.nextLine();
-                        System.out.println("\n" + serverResponse);
+                        String serverStatus = in.nextLine();
+                        System.out.println("\n" + serverStatus);
                         break;
 
                     case 5:
@@ -151,7 +151,7 @@ public class Client {
 
     private static void uploadJarFile(Scanner scanner, PrintWriter out, Scanner in, DataOutputStream dataOut) {
         // Ruta de la carpeta local de los servicios
-        File folder = new File("local-services");
+        File folder = new File(LOCAL_SERVICES_PATH);
         File[] jarFiles = folder.listFiles((dir, name) -> name.endsWith(".jar"));
 
         if (jarFiles != null && jarFiles.length > 0) {
@@ -185,6 +185,7 @@ public class Client {
                 long fileSize = selectedFile.length();
                 dataOut.writeLong(fileSize);  // Escribir el tamaño del archivo como long
                 System.out.println("Tamaño del archivo enviado: " + fileSize);
+                dataOut.flush();
 
                 // Enviar el archivo al servidor
                 byte[] buffer = new byte[1024];

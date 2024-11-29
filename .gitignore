@@ -1,0 +1,15 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+.idea/cliente-servidor.iml
+
+# Archivos compilados
+out/
+
+# Ignorar servicios empaquetados
+/src/server/services/*
+src/client/local-services/*
+src/services/jar/*
+
+# Exceptuar el archivo greetingservices.jar
+!/src/server/services/GreetingService.jar
