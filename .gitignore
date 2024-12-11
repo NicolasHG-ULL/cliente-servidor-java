@@ -11,5 +11,8 @@ out/
 src/client/local-services/*
 src/services/jar/*
 
-# Exceptuar el archivo greetingservices.jar
+# Excepciones
 !/src/server/services/GreetingService.jar
+!src/client/local-services/ByeService.jar
+!src/services/jar/ByeService.jar
+!src/services/jar/GreetingService.jar
