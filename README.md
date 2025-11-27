@@ -50,7 +50,7 @@ Esta carpeta está diseñada para facilitar el desarrollo de nuevos servicios. C
 - `compile.sh`: Script para compilar y empaquetar los servicios en archivos `.jar`.
 - `jar`: Carpeta donde se almacenan los servicios compilados en formato `.jar`.
 
-> ⚠️ **Aviso Importante:**  
+> ❗❌ **Aviso Importante:**  
 > Los servicios que se suben al servidor desde el cliente no incluyen comprobaciones de seguridad. Esto significa que cualquier archivo `.jar` puede ser cargado sin validación, lo que representa una mala práctica y una potencial vulnerabilidad de seguridad.  
 > **Se recomienda no utilizar este enfoque en entornos reales o de producción.** Esta funcionalidad solo está destinada a fines educativos.
 
